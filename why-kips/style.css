@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Poppins";
+    line-height: 1.6;
+    font-size: 14px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+p{
+    color: #272727;
+    font-size: 14px;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.topheading{
+    font-weight: 600;
+    color: #00366C;
+    margin-bottom: 1rem;
+}
+.subheading{
+    color: #00366C;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.nameheading{
+    font-weight: 700;
+}
+.smalltext{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    color: #ADC5F1;
+}
+.white{
+    color:white;
+}
+.black{
+    color: #272727;
+}
+.blue{
+    color: #00366C;
+}
+
+/* ====================================== */
+
+.bar{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.menuitems{
+    display: none;
+    width: 100%;
+    height: 100%;   
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(206, 207, 207);
+    padding: 1rem;
+}
+.menuitems.show{
+    display: flex;
+    justify-content: space-between;
+}
+.menuitems ul{
+    list-style: none;
+}
+.menuitems ul li{
+    padding: 1rem;
+}
+.menuitems ul li a{
+    color: #00366C ;
+    font-size: 15px;
+    font-weight: 500;
+}
+.menu i{
+    font-size: 2rem; 
+    color: #000000;
+}
+#menuicon{
+    margin-top: 1rem;
+}
+.banner{
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 0rem 5rem 0rem;
+    background-color: #00366C;
+    background-image: url(images/Artboard.png);
+    background-repeat: no-repeat;
+    background-position: 56rem -110px;
+}
+.small-circle{
+    position: absolute;
+    left: -4rem;
+    top: 13rem;
+}
+
+.why-kips{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.detailrow{
+    margin-bottom: 2rem;
+}
+.detailrow:nth-child(even)
+{
+    flex-direction: row-reverse;
+}
+.textbox{
+    padding-top: 3rem;
+}
+.image-box img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #F0F5FF;
+}
+.site-footer a{
+    color: #272727;
+    font-size: 14px;
+    font-weight: 500;
+}
+.site-footer a:hover{
+    color: #00366C;
+}
+.site-footer ul{
+    list-style: none;
+}
+.site-footer ul li{
+    margin-left: -2.3rem;
+    padding: 3px;
+}
+.icons{
+    padding-top : 1.5rem;
+}
+.icons i{
+    color: #00366C;
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+}
+.icons i:hover{
+    color: rgb(34, 135, 175);
+}
+
+@media screen and (min-width: 992px) {
+
+    .bar{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 20%;
+    }
+    .menu{
+        width: 70%;
+    }
+    .menuitems{
+        width: 100%;
+        display: unset;
+        height: unset;   
+        position: unset;
+        top: unset;
+        left: unset;
+        z-index: unset;
+        background-color: unset;
+        padding: unset;
+    }
+    .menuitems ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 1rem ;
+    }
+    .menuitems ul li{
+        padding: unset;
+    }
+    .menu i{
+        display: none;
+    }
+    li{
+        font-size: 0.9rem;
+        font-weight: bolder;
+        color:rgb(0, 0, 87);
+        padding-bottom: 0.5rem;
+        position: relative;
+    }
+    .menu li:after{
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #00366C;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        opacity: 0;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transition: top 0.5s, opacity 0.5s;
+    }
+    li:hover:after{
+        top: 100%;
+        opacity: 1;
+    }
+    .textbox{
+        padding-right: 3rem;
+    }
+
+}
